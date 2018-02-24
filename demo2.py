@@ -1,7 +1,5 @@
-#!/usr/bin/python
-# -*- coding: UTF-8 -*-
-
 import os
+
 print("当前目录1："+os.getcwd())
 os.chdir("D:\\python\demo")
 print("当前目录2："+os.getcwd())
