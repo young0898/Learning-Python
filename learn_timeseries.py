@@ -8,7 +8,7 @@ def draw_ts(timeseries):
     timeseries.plot()
     plt.show()
 
-data = pd.read_csv("demo1.csv")
+data = pd.read_csv("learn_timeseries.csv")
 
 data = data.set_index("date")
 data.index = pd.to_datetime(data.index)

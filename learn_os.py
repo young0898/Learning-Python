@@ -24,7 +24,7 @@ os.chdir("data")  #改变目录，相对路径
 #删除目录
 #os.rmdir("data")
 
-file_name = "text3.txt"
+file_name = "learn_os.txt"
 if not os.path.exists(file_name):    #检查文件是否存在
     file_str = open(file_name,"wb+")
     str = "hello world!"
