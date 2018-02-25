@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import os
 
-os.chdir(os.getcwd()+"\data")  #切换到data目录
+os.chdir(os.getcwd() + "\data")  #切换到data目录
 
 def draw_ts(timeseries):
     timeseries.plot()

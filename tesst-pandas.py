@@ -18,8 +18,8 @@ import os
 import pandas as pd
 import numpy as np
 
-os.chdir(os.getcwd()+"\data")
-print("当前目录："+os.getcwd())
+os.chdir(os.getcwd() + "\data")
+print("当前目录：" + os.getcwd())
 
 data = pd.read_excel("234Gliuliang.xlsx") #读取数据
 #data = data.set_index("date")  #设置date列为序号

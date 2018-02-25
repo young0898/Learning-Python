@@ -5,8 +5,8 @@ import matplotlib.pylab as plt
 import statsmodels.api as sm
 from test_stationarity import *
 
-os.chdir(os.getcwd()+"\data")
-print("当前目录："+os.getcwd())
+os.chdir(os.getcwd() + "\data")
+print("当前目录：" + os.getcwd())
 
 data = pd.read_excel("234Gliuliang.xlsx")
 #data = data.set_index("date")
