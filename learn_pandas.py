@@ -1,19 +1,3 @@
-'''
-import pandas as pd
-#import numpy as np
-##data = pd.Series(np.arange(10,20,2))  #不指定index，默认
-#data = pd.Series(np.arange(10,20,2),index=np.arange(1,6))  #指定index
-#data = pd.Series([4,5,6,7]) #不指定index，默认从0开始
-#data = pd.Series([4,5,6,7],index=[1,2,3,4])  #指定index
-data = pd.Series({"Python":1,"Java":2,"C++":3,"C":4})
-print("形状:",data.shape)  #打印数据形状shape
-print("类型:",data.dtype)  #打印数据类型dtype
-print("维数：",data.ndim)
-print("打印所有数据：\n",data)
-print("打印序号2的数据：",data[2]) #序号默认从0开始，序号2对应"Java":2
-print("打印序号Java的数据：",data["Java"])
-'''
-
 import os
 import pandas as pd
 import numpy as np
