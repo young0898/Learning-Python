@@ -1,6 +1,6 @@
 import os
 import pandas as pd
-import numpy as np
+#import numpy as np
 
 os.chdir(os.getcwd() + "\data")
 print("当前目录：" + os.getcwd())
