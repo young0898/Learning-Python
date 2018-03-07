@@ -26,6 +26,11 @@ def getInfo(str):
 def main():
     url = "http://shop.10086.cn/list/134_898_898_1_0_0_0_0_0.html?p=1"
     urls = getUrls(url,5) #需要爬取的页数
+    if os.path.exists("data"):
+        print("data目录存在")
+    else:
+        os.mkdir("data")
+        print("data目录不存在，创建目录")
     os.chdir(os.path.abspath("data")) #切换目录，将结果放在该目录下
     fp = open('getPhoneNumFrom10086.txt', "wb+") #结果保存在该文件中
     count = 0
