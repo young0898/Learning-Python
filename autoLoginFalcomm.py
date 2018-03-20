@@ -37,6 +37,7 @@ class spider:
             print(each[1])
 
 
-falcomm = spider()
-falcomm.login('zhangyang','18389308036')
-falcomm.getInfo()
+if __name__ == '__main__':
+    falcomm = spider()
+    falcomm.login('zhangyang','18389308036')
+    falcomm.getInfo()
