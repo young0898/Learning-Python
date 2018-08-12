@@ -31,8 +31,8 @@ def getInfo(html, info):
 
 def main():
     url = "https://shop.10086.cn/list/134_898_898_1_0_0_0.html?p=1"
-    totalPageNum = getTotalpage(url, 'p=(\d+)">末页')
-    urls = getUrls(url,totalPageNum) #需要爬取的页数
+    totalPageNum = getTotalpage(url, 'p=(\d+)">末页') #获取爬取的总页数
+    urls = getUrls(url, totalPageNum)
     if os.path.exists("data"):
         print("data目录存在")
     else:
