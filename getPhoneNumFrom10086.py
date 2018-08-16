@@ -31,7 +31,7 @@ def openFile(fileDir="data", fileName="output.txt"):
         print(fileDir + "目录不存在，新建目录")
         os.mkdir(fileDir)
     os.chdir(os.path.abspath(fileDir)) #切换目录，将结果放在该目录下
-    fp = open(fileName, "wb+") #结果保存在该文件中 'getPhoneNumFrom10086.txt'
+    fp = open(fileName, "wb+") #结果保存在该文件中
     return fp
 
 def getZoneNum(file_name, sheet_name):
@@ -79,7 +79,7 @@ def main():
     ]
     filename = "phoneNum_" + time.strftime("%Y%m%d%H%M%S") + ".txt"
     fp = openFile("data", filename)
-    zoneNum = getZoneNum("全国地市区号表.xlsx", 'Sheet1')
+    zoneNum = getZoneNum("AllCityZoneList.xlsx", 'Sheet1')
     for each in zoneNum:
         url = getZoneUrl(initUrl[2], each[1], each[3])
         #print(url)
