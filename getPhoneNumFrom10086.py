@@ -79,7 +79,7 @@ def main():
     ]
     filename = "phoneNum_" + time.strftime("%Y%m%d%H%M%S") + ".txt"
     fp = openFile("data", filename)
-    zoneNum = getZoneNum("全国地市区号表.xlsx", 'Sheet2')
+    zoneNum = getZoneNum("全国地市区号表.xlsx", 'Sheet1')
     for each in zoneNum:
         url = getZoneUrl(initUrl[2], each[1], each[3])
         #print(url)

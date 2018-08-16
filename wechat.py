@@ -42,7 +42,7 @@ def text_reply(msg):
         itchat.send(replyMsg[run_model], FromUserName)
 
 run_model = 0 #无模式
-itchat.auto_login(hotReload=True,enableCmdQR=-1)  #扫描二维码登录网页版微信
-#itchat.auto_login(hotReload=True)  #扫描二维码登录网页版微信
+#itchat.auto_login(hotReload=True,enableCmdQR=-1)  #扫描二维码登录网页版微信
+itchat.auto_login(hotReload=True)  #扫描二维码登录网页版微信
 itchat.send('您正在使用微信机器人', getUserName('young'))
 itchat.run() # 运行并保持网页版在线状态

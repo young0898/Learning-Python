@@ -13,7 +13,7 @@ def save_img(img_url,file_name,file_path='picture'):
         #拼接图片名（包含路径）
         filename = '{}{}{}{}'.format(file_path,os.sep,file_name,file_suffix)
        #下载图片，并保存到文件夹中
-        urllib.urlretrieve(img_url,filename=filename)
+        urllib.request.urlretrieve(img_url,filename=filename)
     except IOError as e:
         print('文件操作失败',e)
     except Exception as e:

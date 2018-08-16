@@ -1,7 +1,6 @@
 import requests
 import re
 
-
 class spider:
     def __init__(self):
         self.loginUrl = 'https://www.falcomm.cn:8081/falcomm/frontend/web/index.php?r=site%2Flogin'
@@ -35,7 +34,6 @@ class spider:
         for each in results:
             print(each[0])
             print(each[1])
-
 
 if __name__ == '__main__':
     falcomm = spider()
